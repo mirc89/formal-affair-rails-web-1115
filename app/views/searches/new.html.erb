@@ -1,1 +1,12 @@
 <!-- Your form goes here! -->
+<form class="" action="/searches" method="post">
+  <%= label_tag(:q, "Search for:")%>
+  <%= text_field_tag(:q) %>
+  <!-- <%= hidden_field_tag('authenticity_token', value = params["authenticity_token"]) %> -->
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+  <!-- <%= submit_tag "Search" %> -->
+  <input type="submit" name="" value="Search">
+</form>
+
+<!-- <input type="hidden" name="authenticity_token" id="authenticity_token" value="TlCBWfS0xj44zn1ob5a5vI09z06rmIDshrrT6+tlVoAGiwkv8T5g7YLgYb2EpbCH6gY1w3q7IXiouChlP7ApZQ=="> -->
+<!-- <input type="hidden" name="authenticity_token"                         value="GlXNsL00oHNebXFjOb/it8hRcSRAjBHhe8oh57fHnCdSjkXGuL4GoORDbbbSjOuMr2qLqZGvsHVVyNppYxLjwg=="> -->
